@@ -13,8 +13,8 @@ app.use(bodyParser.json());
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "testaretestarsson1337@gmail.com",
-    pass: "dfcjgxcqnxgauijb",
+    user: "<gmail devacc>",
+    pass: "<gmail dev password>",
   },
 });
 
@@ -73,8 +73,8 @@ function mailIngredients(ingredents) {
   const test = `${ingredents}`;
 
   const mailOptions = {
-    from: "testaretestarsson1337@gmail.com",
-    to: "nacudiboy@gmail.com",
+    from: "<Avsändare>",
+    to: "<Motaggare>",
     subject: "Ingredients",
     text: "ingredents",
     html: `${test}`,
